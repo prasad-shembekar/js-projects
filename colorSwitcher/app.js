@@ -9,7 +9,7 @@ buttons.forEach(function(button){
         console.log(e.target);
         if(e.target.id === 'red'){
             body.style.backgroundColor = e.target.id;
-        }else if(e.target.id === 'pink'){
+        }else if(e.target.id === 'white'){
             body.style.backgroundColor = e.target.id;
         }else if(e.target.id === 'orange'){
             body.style.backgroundColor = e.target.id;

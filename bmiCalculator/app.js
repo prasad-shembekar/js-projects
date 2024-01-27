@@ -14,6 +14,8 @@ form.addEventListener('submit',function(e){
         results.innerHTML = `Please give valid height ${height}`;
     }else if(weight === '' || weight < 0 || isNaN(weight)){
         results.innerHTML = `Please give valid height ${weight}`;
+    }else{
+        (weight / ((height*height)/10000)).toFixed(2);
     }
     
     

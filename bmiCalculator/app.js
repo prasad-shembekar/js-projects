@@ -15,7 +15,21 @@ form.addEventListener('submit',function(e){
     }else if(weight === '' || weight < 0 || isNaN(weight)){
         results.innerHTML = `Please give valid height ${weight}`;
     }else{
-        (weight / ((height*height)/10000)).toFixed(2);
+      const bmi =  (weight / ((height*height)/10000)).toFixed(2);
+    //   show result 
+    
+
+    if(bmi < 18.8){
+        results.innerHTML = `<span>${bmi} and you are underweight</span>`
+    }
+
+    if(bmi > 18.8 && bmi < 24.9){
+        results.innerHTML = `<span>${bmi} and you are normal weight</span>`
+    }
+
+    if(bmi > 24.9){
+        results.innerHTML = `<span>${bmi} and you are over weight</span>`
+    }
     }
     
     

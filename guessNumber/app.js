@@ -16,5 +16,17 @@ let numGuess = 1;
 let playGame = true;
 
 function validateGuess(guess){
+
+}
+
+function checkGuess(guess){
+
+}
+
+function displayMessage(message){
+
+}
+
+function displayGuess(guess){
     
 }

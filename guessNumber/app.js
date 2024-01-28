@@ -28,5 +28,13 @@ function displayMessage(message){
 }
 
 function displayGuess(guess){
+
+}
+
+function newGame(){
+
+}
+
+function endGame(){
     
 }

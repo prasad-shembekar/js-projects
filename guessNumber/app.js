@@ -15,6 +15,15 @@ let numGuess = 1;
 
 let playGame = true;
 
+
+if(playGame){
+    submit.addEventListener('click',function(e){
+        e.preventDefault();
+        const guess = parseInt(userInput.value);
+        validateGuess(guess);
+
+    })
+}
 function validateGuess(guess){
 
 }
@@ -36,5 +45,5 @@ function newGame(){
 }
 
 function endGame(){
-    
+
 }

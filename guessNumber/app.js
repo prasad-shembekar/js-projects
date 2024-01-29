@@ -57,13 +57,12 @@ function checkGuess(guess){
 }
 
 function displayMessage(message){
-    
-
+    lowOrHi.innerHTML = `<h2>${message}</h2>`
 }
 
 function displayGuess(guess){
     userInput.value = ''; //cleanup method
-    guessSlot.innerHTML += "${guess}"
+    guessSlot.innerHTML += `${guess} ,`;
     numGuess++;
     remaining.innerHTML = `${10 - numGuess}`
 }
